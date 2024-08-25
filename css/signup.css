@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;;
+}
+body {
+    display: none;
+}
+
+.main{
+    display: flex;
+}
+.img{
+    /* border: 1px solid yellow; */
+    background-image: url(../Assets/check.jpg);
+    background-position: center;
+/* background-repeat: no-repeat; */
+background-size: cover;
+min-height: 100vh;
+width: 50vw;
+    
+    
+}
+.img img{
+    width: 36.3rem;
+}
+
+.input{
+    /* border: 1px solid red; */
+    width: 28vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.heading h1{
+    padding: 2rem 0rem;
+    font-weight: 700;
+}
+
+form input{
+    width: 20rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #8692A6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 2px solid #2C73EB;
+  }
+  input[type=password]:focus {
+    border: 2px solid #2C73EB;
+  }
+
+
+form p{
+    padding-bottom: 0.6rem;
+    color: #696F79;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+form button{
+    width: 20rem;
+    padding: 0.7rem 0rem;
+    background-color:  #2C73EB;
+    cursor: pointer;
+    border: 1px solid#2C73EB;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+
+    
+}
+.input span{
+    padding-top: 0.8rem;
+    font-size: 11x;
+    color: #696F79;
+}
+span a{
+    text-decoration: none;
+}
+
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure it’s above all other content */
+    display: none; /* Initially hidden */
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Assets/logo.png">
+
+
+        </div>
+        <div class="list-items">
+            <nav>
+                <ul>
+                    <a href="../index.html"> <li>All Blogs</li></a>
+                    <!-- <a href="./Dashboard/dashboard.html"><li>Add Blog</li></a> -->
+                    <button id="logout-btn">Logout</button>
+                    
+                    </li>
+                </ul>
+
+            </nav>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="blog-form">
+
+        <form>
+            <label>Title</label><br/>
+            <input type="text"/ id="title" required> <br/>
+            <label>Description</label><br/>
+            <textarea cols="30" rows="10" id="content" required></textarea><br/>
+            <input type="file" id="image" accept="image/*" required/>
+            <button id="add_btn" class="add_btn">Add Blog</button>
+            <button id="update_btn" class="update_btn">Update</button>
+        </form>
+    </div>
+    <div class="content">
+        <h1>My Blogs</h1>
+        <table></table>
+    </div>
+   
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../firebase.js" type="module"></script>
+    <script src="./dashboard.js" type="module"></script>
+</body>
+</html>
